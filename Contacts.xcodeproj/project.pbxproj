@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3EBEF7BA26E758150009B2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7B926E758150009B2AC /* AppDelegate.swift */; };
 		3EBEF7BC26E758150009B2AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7BB26E758150009B2AC /* SceneDelegate.swift */; };
-		3EBEF7BE26E758150009B2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7BD26E758150009B2AC /* ViewController.swift */; };
 		3EBEF7C126E758160009B2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEF7BF26E758160009B2AC /* Main.storyboard */; };
 		3EBEF7C326E758230009B2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEF7C226E758230009B2AC /* Assets.xcassets */; };
 		3EBEF7C626E758230009B2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEF7C426E758230009B2AC /* LaunchScreen.storyboard */; };
+		3EBEF7D626E75D570009B2AC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7D526E75D570009B2AC /* Person.swift */; };
+		3EBEF7D926E75FA90009B2AC /* DataPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7D826E75FA90009B2AC /* DataPerson.swift */; };
+		3EBEF7DF26E7665D0009B2AC /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7DE26E7665D0009B2AC /* PersonListViewController.swift */; };
+		3EBEF7E226E769370009B2AC /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7E126E769370009B2AC /* PersonViewController.swift */; };
+		3EBEF7E526E76BF10009B2AC /* FullPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEF7E426E76BF10009B2AC /* FullPersonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EBEF7B626E758150009B2AC /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBEF7B926E758150009B2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EBEF7BB26E758150009B2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EBEF7BD26E758150009B2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EBEF7C026E758160009B2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EBEF7C226E758230009B2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EBEF7C526E758230009B2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EBEF7C726E758230009B2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBEF7D526E75D570009B2AC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3EBEF7D826E75FA90009B2AC /* DataPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPerson.swift; sourceTree = "<group>"; };
+		3EBEF7DE26E7665D0009B2AC /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		3EBEF7E126E769370009B2AC /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		3EBEF7E426E76BF10009B2AC /* FullPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPersonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		3EBEF7B826E758150009B2AC /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				3EBEF7B926E758150009B2AC /* AppDelegate.swift */,
-				3EBEF7BB26E758150009B2AC /* SceneDelegate.swift */,
-				3EBEF7BD26E758150009B2AC /* ViewController.swift */,
-				3EBEF7BF26E758160009B2AC /* Main.storyboard */,
-				3EBEF7C226E758230009B2AC /* Assets.xcassets */,
-				3EBEF7C426E758230009B2AC /* LaunchScreen.storyboard */,
-				3EBEF7C726E758230009B2AC /* Info.plist */,
+				3EBEF7D326E75D260009B2AC /* Models */,
+				3EBEF7D026E758A60009B2AC /* App */,
+				3EBEF7DB26E764B30009B2AC /* Views */,
+				3EBEF7CE26E7584B0009B2AC /* Storyboard */,
+				3EBEF7CF26E7585D0009B2AC /* Resources */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		3EBEF7CE26E7584B0009B2AC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEF7BF26E758160009B2AC /* Main.storyboard */,
+				3EBEF7C426E758230009B2AC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EBEF7CF26E7585D0009B2AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEF7C226E758230009B2AC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EBEF7D026E758A60009B2AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEF7B926E758150009B2AC /* AppDelegate.swift */,
+				3EBEF7BB26E758150009B2AC /* SceneDelegate.swift */,
+				3EBEF7C726E758230009B2AC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EBEF7D326E75D260009B2AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEF7D526E75D570009B2AC /* Person.swift */,
+				3EBEF7D826E75FA90009B2AC /* DataPerson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EBEF7DB26E764B30009B2AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEF7DE26E7665D0009B2AC /* PersonListViewController.swift */,
+				3EBEF7E126E769370009B2AC /* PersonViewController.swift */,
+				3EBEF7E426E76BF10009B2AC /* FullPersonListViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBEF7BE26E758150009B2AC /* ViewController.swift in Sources */,
 				3EBEF7BA26E758150009B2AC /* AppDelegate.swift in Sources */,
+				3EBEF7E526E76BF10009B2AC /* FullPersonListViewController.swift in Sources */,
+				3EBEF7E226E769370009B2AC /* PersonViewController.swift in Sources */,
+				3EBEF7D626E75D570009B2AC /* Person.swift in Sources */,
+				3EBEF7DF26E7665D0009B2AC /* PersonListViewController.swift in Sources */,
+				3EBEF7D926E75FA90009B2AC /* DataPerson.swift in Sources */,
 				3EBEF7BC26E758150009B2AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A988NJMD75;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanovMA.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A988NJMD75;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanovMA.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
