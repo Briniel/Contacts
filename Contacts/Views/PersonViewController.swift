@@ -17,7 +17,7 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = person.fullName
-        numberPhoneLabel.text = "Number Phone: \(person.contact.numberPhone)"
+        numberPhoneLabel.text = "Phone: \(person.contact.numberPhone)"
         mailLabel.text = "Mail: \(person.contact.mail)"
     }
     
