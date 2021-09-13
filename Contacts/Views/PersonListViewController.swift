@@ -44,7 +44,7 @@ class PersonListViewController: UITableViewController {
     }
 }
 
-// MARK: - TabBarDelegate
+// MARK: - Tab Bar Delegate
 
 extension PersonListViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
